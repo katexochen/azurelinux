@@ -188,7 +188,7 @@ mkdir -p %{buildroot}%{_datadir}/kube-virt/virt-handler
 install -p -m 0644 cmd/virt-handler/nsswitch.conf %{buildroot}%{_datadir}/kube-virt/virt-handler/
 
 # virt-launcher SELinux policy needs to land in virt-handler container
-install -p -m 0644 cmd/virt-handler/virt_launcher.cil %{buildroot}%{_datadir}/kube-virt/virt-handler/
+install -p -m 0644 cmd/virt-handler/virt_launcher.cil %{buildroot}/
 
 # Persistent reservation helper configuration files
 mkdir -p %{buildroot}%{_datadir}/kube-virt/pr-helper
@@ -269,6 +269,9 @@ install -p -m 0644 cmd/virt-launcher/qemu.conf %{buildroot}%{_datadir}/kube-virt
 %{_bindir}/virt-tests
 
 %changelog
+* Mon Aug 19 2024 Harshit Gupta <guptaharshit@microsoft.com> - 1.2.0-5
+- Update installation path of virt_launcher.cil in virt-handler container.
+
 * Thu Jun 26 2024 Sharath Srikanth Chellappa <sharathsr@microsoft.com> - 1.2.0-4
 - Deleting Hotplug_Grace_Period.patch since it is no longer required.
 
