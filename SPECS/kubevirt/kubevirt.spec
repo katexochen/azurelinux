@@ -236,6 +236,7 @@ install -p -m 0644 cmd/virt-launcher/qemu.conf %{buildroot}%{_datadir}/kube-virt
 %{_datadir}/kube-virt/virt-handler
 %{_bindir}/virt-handler
 %{_bindir}/virt-chroot
+%{buildroot}/virt_launcher.cil
 
 %files virt-launcher
 %license LICENSE
@@ -272,7 +273,7 @@ install -p -m 0644 cmd/virt-launcher/qemu.conf %{buildroot}%{_datadir}/kube-virt
 * Mon Aug 19 2024 Harshit Gupta <guptaharshit@microsoft.com> - 1.2.0-5
 - Update installation path of virt_launcher.cil in virt-handler container.
 
-* Thu Jun 26 2024 Sharath Srikanth Chellappa <sharathsr@microsoft.com> - 1.2.0-4
+* Wed Jun 26 2024 Sharath Srikanth Chellappa <sharathsr@microsoft.com> - 1.2.0-4
 - Deleting Hotplug_Grace_Period.patch since it is no longer required.
 
 * Wed May 22 2024 Suresh Babu Chalamalasetty <schalam@microsoft.com> - 1.2.0-3
