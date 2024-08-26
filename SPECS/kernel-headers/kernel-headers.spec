@@ -18,7 +18,7 @@ Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Group:          System Environment/Kernel
 URL:            https://github.com/microsoft/CBL-Mariner-Linux-Kernel
-Source0:        https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner-2/%{version}.tar.gz#/kernel-%{version}.tar.gz
+Source0:        https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner-2/%{version}.tar.gz#/kernel-5.15.164.1.tar.gz
 # Historical name shipped by other distros
 Provides:       glibc-kernheaders = %{version}-%{release}
 BuildArch:      noarch
@@ -39,7 +39,7 @@ cross-glibc package.
 %endif
 
 %prep
-%setup -q -n CBL-Mariner-Linux-Kernel-rolling-lts-mariner-2-%{version}
+%setup -q -n CBL-Mariner-Linux-Kernel-rolling-lts-mariner-2-5.15.164.1
 
 %build
 make mrproper
