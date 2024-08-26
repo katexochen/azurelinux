@@ -20,7 +20,7 @@
 Summary:        Container native virtualization
 Name:           kubevirt
 Version:        1.2.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        ASL 2.0
 Vendor:         Microsoft Corporation
 Distribution:   Azure Linux
@@ -32,6 +32,7 @@ Source0:        https://github.com/kubevirt/kubevirt/archive/refs/tags/v%{versio
 # correctly.
 Patch0:         Cleanup-housekeeping-cgroup-on-vm-del.patch
 %global debug_package %{nil}
+BuildRequires:  swtpm-tools
 BuildRequires:  glibc-devel
 BuildRequires:  glibc-static >= 2.38-6%{?dist}
 BuildRequires:  golang >= 1.21
@@ -269,6 +270,9 @@ install -p -m 0644 cmd/virt-launcher/qemu.conf %{buildroot}%{_datadir}/kube-virt
 %{_bindir}/virt-tests
 
 %changelog
+* Mon Aug 26 2024 Sharath Srikanth Chellappa <sharathsr@microsoft.com> - 1.2.0-5
+- Adding swtpm tools for building kubevirt RPM.
+
 * Thu Jun 26 2024 Sharath Srikanth Chellappa <sharathsr@microsoft.com> - 1.2.0-4
 - Deleting Hotplug_Grace_Period.patch since it is no longer required.
 
