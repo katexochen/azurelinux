@@ -18142,6 +18142,16 @@
       "component": {
         "type": "other",
         "other": {
+          "name": "perl-match-simple",
+          "version": "0.012",
+          "downloadUrl": "https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/match-simple-0.012.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
           "name": "perl-Math-Int64",
           "version": "0.54",
           "downloadUrl": "https://cpan.metacpan.org/modules/by-module/Math/Math-Int64-0.54.tar.gz"
@@ -19445,6 +19455,16 @@
           "name": "perl-Sub-Identify",
           "version": "0.14",
           "downloadUrl": "https://cpan.metacpan.org/authors/id/R/RG/RGARCIA/Sub-Identify-0.14.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "perl-Sub-Infix",
+          "version": "0.004",
+          "downloadUrl": "https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Sub-Infix-0.004.tar.gz"
         }
       }
     },
@@ -27945,16 +27965,6 @@
       "component": {
         "type": "other",
         "other": {
-          "name": "stress-ng",
-          "version": "0.18.02",
-          "downloadUrl": "https://github.com/ColinIanKing/stress-ng/archive/V0.18.02/stress-ng-0.18.02.tar.gz"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
           "name": "strace",
           "version": "6.8",
           "downloadUrl": "https://strace.io/files/6.8/strace-6.8.tar.xz"
@@ -27968,6 +27978,16 @@
           "name": "stratis-cli",
           "version": "2.0.1",
           "downloadUrl": "https://github.com/stratis-storage/stratis-cli/archive/v2.0.1/stratis-cli-2.0.1.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "stress-ng",
+          "version": "0.18.02",
+          "downloadUrl": "https://github.com/ColinIanKing/stress-ng/archive/V0.18.02/stress-ng-0.18.02.tar.gz"
         }
       }
     },
