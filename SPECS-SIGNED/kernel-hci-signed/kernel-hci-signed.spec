@@ -1,10 +1,10 @@
 %global debug_package %{nil}
 %global sha512hmac bash %{_sourcedir}/sha512hmac-openssl.sh
 %global buildarch x86_64
-%define uname_r %{version}-%{release}
+%define uname_r 5.15.164.1-%{release}
 Summary:        Signed Linux Kernel for HCI
 Name:           kernel-hci-signed-%{buildarch}
-Version:        5.15.164.1
+Version:        5.15.165.1
 Release:        1%{?dist}
 License:        GPLv2
 Vendor:         Microsoft Corporation
@@ -149,6 +149,9 @@ ln -sf linux-%{uname_r}.cfg /boot/mariner.cfg
 %exclude /module_info.ld
 
 %changelog
+* Mon Aug 26 2024 Pawel Winogrodzki <pawlewi@microsoft.com> - 5.15.165.1-1
+- Update source to 5.15.165.1
+
 * Fri Aug 09 2024 CBL-Mariner Servicing Account <cblmargh@microsoft.com> - 5.15.164.1-1
 - Auto-upgrade to 5.15.164.1
 

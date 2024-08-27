@@ -6,7 +6,7 @@
 %ifarch aarch64
 %global buildarch aarch64
 %endif
-%define uname_r %{version}-%{release}
+%define uname_r 5.15.164.1-%{release}
 Summary:        Signed Linux Kernel for %{buildarch} systems
 Name:           kernel-signed-%{buildarch}
 Version:        5.15.165.1
